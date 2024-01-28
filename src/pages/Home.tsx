@@ -2,7 +2,24 @@ import Calendar from '../components/Calendar';
 import Header from '../components/Header';
 import { useMatakuliah } from '../hooks/useMatakuliah';
 
-function Home() {
+const days = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat'];
+const timeblocks = [
+	'6AM',
+	'7AM',
+	'8AM',
+	'9AM',
+	'10AM',
+	'11AM',
+	'12PM',
+	'1PM',
+	'2PM',
+	'3PM',
+	'4PM',
+	'5PM',
+	'6PM',
+];
+
+const Home = () => {
 	// [agenda, setAgenda] = useState<IMatakuliah[]>([]);
 	const { matakuliahData } = useMatakuliah();
 
@@ -14,12 +31,12 @@ function Home() {
 				<Header />
 			</header>
 			<main>
-				<div className="w-[900px]">
-					<Calendar />
+				<div className="">
+					<Calendar days={days} timeblocks={timeblocks} />
 				</div>
 			</main>
 		</div>
 	);
-}
+};
 
 export default Home;
