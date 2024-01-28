@@ -2,8 +2,13 @@ import { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import Calendar from '../components/Calendar';
 import { useMatakuliah } from '../hooks/useMatakuliah';
-import { IMatakuliahTerpilih } from '../models/MatakuliahTerpilih';
+import {
+  ColorVariants,
+  IMatakuliahTerpilih
+} from '../models/MatakuliahTerpilih';
 import { IMatakuliah } from '../models/Matakuliah';
+import ListMatakuliahTerpilih from '@/components/ListMatakuliahTerpilih';
+import { getRandomColorVariant } from '@/utils/getRandomColorVariant';
 
 const days = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat'];
 const timeblocks = [
@@ -36,7 +41,7 @@ const Home = () => {
   const addMatakuliah = (
     matakuliah: IMatakuliah,
     isEnabled: boolean,
-    color: string
+    color: ColorVariants
   ) => {
     setMatakuliahTerplih((prev) => [
       ...prev,
@@ -47,12 +52,9 @@ const Home = () => {
   const addRandomMatakuliah_DEBUG = () => {
     const randomMatakuliah =
       matakuliahData[Math.floor(Math.random() * matakuliahData.length)];
-    const randomColor = ['blue', 'red', 'green', 'orange', 'purple'];
-    addMatakuliah(
-      randomMatakuliah,
-      true,
-      randomColor[Math.floor(Math.random() * 5)]
-    );
+    const randomColor = getRandomColorVariant();
+
+    addMatakuliah(randomMatakuliah, true, randomColor);
   };
 
   return (
@@ -61,12 +63,17 @@ const Home = () => {
         <Header />
       </header>
       <main>
-        <div className="flex flex-col sm:flex-row gap-2">
+        <div className="flex flex-col sm:flex-row gap-2 flex-auto grow-[3]">
           <Calendar
             className="flex-1 grow-[2.5]"
             days={days}
             timeblocks={timeblocks}
             matakuliahTerpilih={matakuliahTerplih}
+          />
+          <ListMatakuliahTerpilih
+            className="flex-1"
+            mataKuliahTerpilih={matakuliahTerplih}
+            setMataKuliahTerpilih={setMatakuliahTerplih}
           />
         </div>
         <button onClick={addRandomMatakuliah_DEBUG}>
