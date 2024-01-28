@@ -1,332 +1,332 @@
 [
-    {
-        "kode": "120",
-        "fakultas": "FITB",
-        "nama": "Teknik Geologi"
-    },
-    {
-        "kode": "128",
-        "fakultas": "FITB",
-        "nama": "Meteorologi"
-    },
-    {
-        "kode": "129",
-        "fakultas": "FITB",
-        "nama": "Oseanografi"
-    },
-    {
-        "kode": "151",
-        "fakultas": "FITB",
-        "nama": "Teknik Geodesi dan Geomatika"
-    },
-    {
-        "kode": "163",
-        "fakultas": "FITB",
-        "nama": "Tahap Tahun Pertama FITB"
-    },
-    {
-        "kode": "101",
-        "fakultas": "FMIPA",
-        "nama": "Matematika"
-    },
-    {
-        "kode": "102",
-        "fakultas": "FMIPA",
-        "nama": "Fisika"
-    },
-    {
-        "kode": "103",
-        "fakultas": "FMIPA",
-        "nama": "Astronomi"
-    },
-    {
-        "kode": "105",
-        "fakultas": "FMIPA",
-        "nama": "Kimia"
-    },
-    {
-        "kode": "108",
-        "fakultas": "FMIPA",
-        "nama": "Aktuaria"
-    },
-    {
-        "kode": "160",
-        "fakultas": "FMIPA",
-        "nama": "Tahap Tahun Pertama FMIPA"
-    },
-    {
-        "kode": "168",
-        "fakultas": "FSRD",
-        "nama": "Tahap Tahun Pertama FSRD"
-    },
-    {
-        "kode": "170",
-        "fakultas": "FSRD",
-        "nama": "Seni Rupa"
-    },
-    {
-        "kode": "172",
-        "fakultas": "FSRD",
-        "nama": "Kriya"
-    },
-    {
-        "kode": "173",
-        "fakultas": "FSRD",
-        "nama": "Desain Interior"
-    },
-    {
-        "kode": "174",
-        "fakultas": "FSRD",
-        "nama": "Desain Komunikasi Visual"
-    },
-    {
-        "kode": "175",
-        "fakultas": "FSRD",
-        "nama": "Desain Produk"
-    },
-    {
-        "kode": "130",
-        "fakultas": "FTI",
-        "nama": "Teknik Kimia"
-    },
-    {
-        "kode": "133",
-        "fakultas": "FTI",
-        "nama": "Teknik Fisika"
-    },
-    {
-        "kode": "134",
-        "fakultas": "FTI",
-        "nama": "Teknik Industri"
-    },
-    {
-        "kode": "143",
-        "fakultas": "FTI",
-        "nama": "Teknik Pangan"
-    },
-    {
-        "kode": "144",
-        "fakultas": "FTI",
-        "nama": "Manajemen Rekayasa"
-    },
-    {
-        "kode": "145",
-        "fakultas": "FTI",
-        "nama": "Teknik Bioenergi dan Kemurgi"
-    },
-    {
-        "kode": "167",
-        "fakultas": "FTI",
-        "nama": "Tahap Tahun Pertama FTI"
-    },
-    {
-        "kode": "131",
-        "fakultas": "FTMD",
-        "nama": "Teknik Mesin"
-    },
-    {
-        "kode": "136",
-        "fakultas": "FTMD",
-        "nama": "Teknik Dirgantara"
-    },
-    {
-        "kode": "137",
-        "fakultas": "FTMD",
-        "nama": "Teknik Material"
-    },
-    {
-        "kode": "169",
-        "fakultas": "FTMD",
-        "nama": "Tahap Tahun Pertama FTMD"
-    },
-    {
-        "kode": "150",
-        "fakultas": "FTSL",
-        "nama": "Teknik Sipil"
-    },
-    {
-        "kode": "153",
-        "fakultas": "FTSL",
-        "nama": "Teknik Lingkungan"
-    },
-    {
-        "kode": "155",
-        "fakultas": "FTSL",
-        "nama": "Teknik Kelautan"
-    },
-    {
-        "kode": "157",
-        "fakultas": "FTSL",
-        "nama": "Rekayasa Infrastruktur Lingkungan"
-    },
-    {
-        "kode": "158",
-        "fakultas": "FTSL",
-        "nama": "Teknik dan Pengelolaan Sumber Daya Air"
-    },
-    {
-        "kode": "166",
-        "fakultas": "FTSL",
-        "nama": "Tahap Tahun Pertama FTSL"
-    },
-    {
-        "kode": "121",
-        "fakultas": "FTTM",
-        "nama": "Teknik Pertambangan"
-    },
-    {
-        "kode": "122",
-        "fakultas": "FTTM",
-        "nama": "Teknik Perminyakan"
-    },
-    {
-        "kode": "123",
-        "fakultas": "FTTM",
-        "nama": "Teknik Geofisika"
-    },
-    {
-        "kode": "125",
-        "fakultas": "FTTM",
-        "nama": "Teknik Metalurgi"
-    },
-    {
-        "kode": "164",
-        "fakultas": "FTTM",
-        "nama": "Tahap Tahun Pertama FTTM"
-    },
-    {
-        "kode": "100",
-        "fakultas": "NONFS",
-        "nama": "Non Reguler S1"
-    },
-    {
-        "kode": "179",
-        "fakultas": "NONFS",
-        "nama": "Mata Kuliah Umum (MKU)"
-    },
-    {
-        "kode": "152",
-        "fakultas": "SAPPK",
-        "nama": "Arsitektur"
-    },
-    {
-        "kode": "154",
-        "fakultas": "SAPPK",
-        "nama": "Perencanaan Wilayah dan Kota"
-    },
-    {
-        "kode": "199",
-        "fakultas": "SAPPK",
-        "nama": "Tahap Tahun Pertama SAPPK"
-    },
-    {
-        "kode": "190",
-        "fakultas": "SBM",
-        "nama": "Manajemen"
-    },
-    {
-        "kode": "192",
-        "fakultas": "SBM",
-        "nama": "Kewirausahaan"
-    },
-    {
-        "kode": "197",
-        "fakultas": "SBM",
-        "nama": "Tahap Tahun Pertama SBM"
-    },
-    {
-        "kode": "107",
-        "fakultas": "SF",
-        "nama": "Sains dan Teknologi Farmasi"
-    },
-    {
-        "kode": "116",
-        "fakultas": "SF",
-        "nama": "Farmasi Klinik dan Komunitas"
-    },
-    {
-        "kode": "162",
-        "fakultas": "SF",
-        "nama": "Tahap Tahun Pertama SF"
-    },
-    {
-        "kode": "104",
-        "fakultas": "SITH",
-        "nama": "Mikrobiologi"
-    },
-    {
-        "kode": "106",
-        "fakultas": "SITH",
-        "nama": "Biologi"
-    },
-    {
-        "kode": "112",
-        "fakultas": "SITH",
-        "nama": "Rekayasa Hayati"
-    },
-    {
-        "kode": "114",
-        "fakultas": "SITH",
-        "nama": "Rekayasa Pertanian"
-    },
-    {
-        "kode": "115",
-        "fakultas": "SITH",
-        "nama": "Rekayasa Kehutanan"
-    },
-    {
-        "kode": "119",
-        "fakultas": "SITH",
-        "nama": "Teknologi Pasca Panen"
-    },
-    {
-        "kode": "161",
-        "fakultas": "SITH",
-        "nama": "Tahap Tahun Pertama SITH - Program Sains"
-    },
-    {
-        "kode": "198",
-        "fakultas": "SITH",
-        "nama": "Tahap Tahun Pertama SITH - Program Rekayasa"
-    },
-    {
-        "kode": "132",
-        "fakultas": "STEI",
-        "nama": "Teknik Elektro"
-    },
-    {
-        "kode": "135",
-        "fakultas": "STEI",
-        "nama": "Teknik Informatika"
-    },
-    {
-        "kode": "165",
-        "fakultas": "STEI",
-        "nama": "Tahap Tahun Pertama STEI - Rekayasa"
-    },
-    {
-        "kode": "180",
-        "fakultas": "STEI",
-        "nama": "Teknik Tenaga Listrik"
-    },
-    {
-        "kode": "181",
-        "fakultas": "STEI",
-        "nama": "Teknik Telekomunikasi"
-    },
-    {
-        "kode": "182",
-        "fakultas": "STEI",
-        "nama": "Sistem dan Teknologi Informasi"
-    },
-    {
-        "kode": "183",
-        "fakultas": "STEI",
-        "nama": "Teknik Biomedis"
-    },
-    {
-        "kode": "196",
-        "fakultas": "STEI",
-        "nama": "Tahap Tahun Pertama STEI - Komputasi"
-    }
+  {
+    "kode": "120",
+    "fakultas": "FITB",
+    "nama": "Teknik Geologi"
+  },
+  {
+    "kode": "128",
+    "fakultas": "FITB",
+    "nama": "Meteorologi"
+  },
+  {
+    "kode": "129",
+    "fakultas": "FITB",
+    "nama": "Oseanografi"
+  },
+  {
+    "kode": "151",
+    "fakultas": "FITB",
+    "nama": "Teknik Geodesi dan Geomatika"
+  },
+  {
+    "kode": "163",
+    "fakultas": "FITB",
+    "nama": "Tahap Tahun Pertama FITB"
+  },
+  {
+    "kode": "101",
+    "fakultas": "FMIPA",
+    "nama": "Matematika"
+  },
+  {
+    "kode": "102",
+    "fakultas": "FMIPA",
+    "nama": "Fisika"
+  },
+  {
+    "kode": "103",
+    "fakultas": "FMIPA",
+    "nama": "Astronomi"
+  },
+  {
+    "kode": "105",
+    "fakultas": "FMIPA",
+    "nama": "Kimia"
+  },
+  {
+    "kode": "108",
+    "fakultas": "FMIPA",
+    "nama": "Aktuaria"
+  },
+  {
+    "kode": "160",
+    "fakultas": "FMIPA",
+    "nama": "Tahap Tahun Pertama FMIPA"
+  },
+  {
+    "kode": "168",
+    "fakultas": "FSRD",
+    "nama": "Tahap Tahun Pertama FSRD"
+  },
+  {
+    "kode": "170",
+    "fakultas": "FSRD",
+    "nama": "Seni Rupa"
+  },
+  {
+    "kode": "172",
+    "fakultas": "FSRD",
+    "nama": "Kriya"
+  },
+  {
+    "kode": "173",
+    "fakultas": "FSRD",
+    "nama": "Desain Interior"
+  },
+  {
+    "kode": "174",
+    "fakultas": "FSRD",
+    "nama": "Desain Komunikasi Visual"
+  },
+  {
+    "kode": "175",
+    "fakultas": "FSRD",
+    "nama": "Desain Produk"
+  },
+  {
+    "kode": "130",
+    "fakultas": "FTI",
+    "nama": "Teknik Kimia"
+  },
+  {
+    "kode": "133",
+    "fakultas": "FTI",
+    "nama": "Teknik Fisika"
+  },
+  {
+    "kode": "134",
+    "fakultas": "FTI",
+    "nama": "Teknik Industri"
+  },
+  {
+    "kode": "143",
+    "fakultas": "FTI",
+    "nama": "Teknik Pangan"
+  },
+  {
+    "kode": "144",
+    "fakultas": "FTI",
+    "nama": "Manajemen Rekayasa"
+  },
+  {
+    "kode": "145",
+    "fakultas": "FTI",
+    "nama": "Teknik Bioenergi dan Kemurgi"
+  },
+  {
+    "kode": "167",
+    "fakultas": "FTI",
+    "nama": "Tahap Tahun Pertama FTI"
+  },
+  {
+    "kode": "131",
+    "fakultas": "FTMD",
+    "nama": "Teknik Mesin"
+  },
+  {
+    "kode": "136",
+    "fakultas": "FTMD",
+    "nama": "Teknik Dirgantara"
+  },
+  {
+    "kode": "137",
+    "fakultas": "FTMD",
+    "nama": "Teknik Material"
+  },
+  {
+    "kode": "169",
+    "fakultas": "FTMD",
+    "nama": "Tahap Tahun Pertama FTMD"
+  },
+  {
+    "kode": "150",
+    "fakultas": "FTSL",
+    "nama": "Teknik Sipil"
+  },
+  {
+    "kode": "153",
+    "fakultas": "FTSL",
+    "nama": "Teknik Lingkungan"
+  },
+  {
+    "kode": "155",
+    "fakultas": "FTSL",
+    "nama": "Teknik Kelautan"
+  },
+  {
+    "kode": "157",
+    "fakultas": "FTSL",
+    "nama": "Rekayasa Infrastruktur Lingkungan"
+  },
+  {
+    "kode": "158",
+    "fakultas": "FTSL",
+    "nama": "Teknik dan Pengelolaan Sumber Daya Air"
+  },
+  {
+    "kode": "166",
+    "fakultas": "FTSL",
+    "nama": "Tahap Tahun Pertama FTSL"
+  },
+  {
+    "kode": "121",
+    "fakultas": "FTTM",
+    "nama": "Teknik Pertambangan"
+  },
+  {
+    "kode": "122",
+    "fakultas": "FTTM",
+    "nama": "Teknik Perminyakan"
+  },
+  {
+    "kode": "123",
+    "fakultas": "FTTM",
+    "nama": "Teknik Geofisika"
+  },
+  {
+    "kode": "125",
+    "fakultas": "FTTM",
+    "nama": "Teknik Metalurgi"
+  },
+  {
+    "kode": "164",
+    "fakultas": "FTTM",
+    "nama": "Tahap Tahun Pertama FTTM"
+  },
+  {
+    "kode": "100",
+    "fakultas": "NONFS",
+    "nama": "Non Reguler S1"
+  },
+  {
+    "kode": "179",
+    "fakultas": "NONFS",
+    "nama": "Mata Kuliah Umum (MKU)"
+  },
+  {
+    "kode": "152",
+    "fakultas": "SAPPK",
+    "nama": "Arsitektur"
+  },
+  {
+    "kode": "154",
+    "fakultas": "SAPPK",
+    "nama": "Perencanaan Wilayah dan Kota"
+  },
+  {
+    "kode": "199",
+    "fakultas": "SAPPK",
+    "nama": "Tahap Tahun Pertama SAPPK"
+  },
+  {
+    "kode": "190",
+    "fakultas": "SBM",
+    "nama": "Manajemen"
+  },
+  {
+    "kode": "192",
+    "fakultas": "SBM",
+    "nama": "Kewirausahaan"
+  },
+  {
+    "kode": "197",
+    "fakultas": "SBM",
+    "nama": "Tahap Tahun Pertama SBM"
+  },
+  {
+    "kode": "107",
+    "fakultas": "SF",
+    "nama": "Sains dan Teknologi Farmasi"
+  },
+  {
+    "kode": "116",
+    "fakultas": "SF",
+    "nama": "Farmasi Klinik dan Komunitas"
+  },
+  {
+    "kode": "162",
+    "fakultas": "SF",
+    "nama": "Tahap Tahun Pertama SF"
+  },
+  {
+    "kode": "104",
+    "fakultas": "SITH",
+    "nama": "Mikrobiologi"
+  },
+  {
+    "kode": "106",
+    "fakultas": "SITH",
+    "nama": "Biologi"
+  },
+  {
+    "kode": "112",
+    "fakultas": "SITH",
+    "nama": "Rekayasa Hayati"
+  },
+  {
+    "kode": "114",
+    "fakultas": "SITH",
+    "nama": "Rekayasa Pertanian"
+  },
+  {
+    "kode": "115",
+    "fakultas": "SITH",
+    "nama": "Rekayasa Kehutanan"
+  },
+  {
+    "kode": "119",
+    "fakultas": "SITH",
+    "nama": "Teknologi Pasca Panen"
+  },
+  {
+    "kode": "161",
+    "fakultas": "SITH",
+    "nama": "Tahap Tahun Pertama SITH - Program Sains"
+  },
+  {
+    "kode": "198",
+    "fakultas": "SITH",
+    "nama": "Tahap Tahun Pertama SITH - Program Rekayasa"
+  },
+  {
+    "kode": "132",
+    "fakultas": "STEI",
+    "nama": "Teknik Elektro"
+  },
+  {
+    "kode": "135",
+    "fakultas": "STEI",
+    "nama": "Teknik Informatika"
+  },
+  {
+    "kode": "165",
+    "fakultas": "STEI",
+    "nama": "Tahap Tahun Pertama STEI - Rekayasa"
+  },
+  {
+    "kode": "180",
+    "fakultas": "STEI",
+    "nama": "Teknik Tenaga Listrik"
+  },
+  {
+    "kode": "181",
+    "fakultas": "STEI",
+    "nama": "Teknik Telekomunikasi"
+  },
+  {
+    "kode": "182",
+    "fakultas": "STEI",
+    "nama": "Sistem dan Teknologi Informasi"
+  },
+  {
+    "kode": "183",
+    "fakultas": "STEI",
+    "nama": "Teknik Biomedis"
+  },
+  {
+    "kode": "196",
+    "fakultas": "STEI",
+    "nama": "Tahap Tahun Pertama STEI - Komputasi"
+  }
 ]
