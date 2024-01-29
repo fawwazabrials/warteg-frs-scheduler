@@ -1,4 +1,13 @@
 import { IMatakuliahTerpilih } from '@/models/MatakuliahTerpilih';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogTitle,
+  DialogTrigger,
+  DialogHeader
+} from './ui/dialog';
+import SearchMatakuliah from './SearchMatakuliah';
 
 interface ListMatakuliahTerpilihProps {
   className?: string;
@@ -13,9 +22,16 @@ const ListMatakuliahTerpilih = ({
 }: ListMatakuliahTerpilihProps) => {
   return (
     <div className={`flex flex-col ${className}`}>
-      <button className="bg-sky-600 text-white p-2 w-full rounded-lg text-sm">
-        Tambah Mata Kuliah
-      </button>
+      <Dialog>
+        <DialogTrigger asChild>
+          <button className="bg-sky-600 text-white p-2 w-full rounded-lg text-sm">
+            Tambah Mata Kuliah
+          </button>
+        </DialogTrigger>
+        <DialogContent className="max-w-[80%]">
+          <SearchMatakuliah />
+        </DialogContent>
+      </Dialog>
 
       <div className="bg-white rounded-lg shadow-lg mt-2">
         <h2 className="text-white bg-sky-600 rounded-t-lg px-4 py-2 text-sm">

@@ -1,0 +1,17 @@
+[
+  { "kode": "FMIPA", "nama": "Fakultas Matematika dan Ilmu Pengetahuan Alam" },
+  { "kode": "SF", "nama": "Sekolah Farmasi" },
+  { "kode": "FITB", "nama": "Fakultas Ilmu dan Teknologi Kebumian" },
+  { "kode": "FTTM", "nama": "Fakultas Teknik Pertambangan dan Perminyakan" },
+  { "kode": "STEI", "nama": "Sekolah Teknik Elektro dan Informatika" },
+  { "kode": "FTSL", "nama": "Fakultas Teknik Sipil dan Lingkungan" },
+  { "kode": "FTI", "nama": "Fakultas Teknik Industri" },
+  { "kode": "FSRD", "nama": "Fakultas Seni Rupa dan Desain" },
+  { "kode": "FTMD", "nama": "Fakultas Teknik Mesin dan Dirgantara" },
+  { "kode": "SBM", "nama": "Sekolah Bisnis dan Manajemen" },
+  { "kode": "SITH", "nama": "Sekolah Ilmu dan Teknologi Hayati" },
+  {
+    "kode": "SAPPK",
+    "nama": "Sekolah Arsitektur, Perencanaan, dan Pengembangan Kebijakan"
+  }
+]
