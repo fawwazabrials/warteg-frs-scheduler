@@ -1,14 +1,7 @@
-import { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import Calendar from '../components/Calendar';
-import { useMatakuliah } from '../hooks/useMatakuliah';
-import {
-  ColorVariants,
-  IMatakuliahTerpilih
-} from '../models/MatakuliahTerpilih';
-import { IMatakuliah } from '../models/Matakuliah';
-import ListMatakuliahTerpilih from '@/components/ListMatakuliahTerpilih';
-import { getRandomColorVariant } from '@/utils/getRandomColorVariant';
+import useDebug from '@/hooks/useDebug';
+import PickedMatakuliahList from '@/components/PickedMatakuliahList';
 
 const days = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat'];
 const timeblocks = [
@@ -28,34 +21,7 @@ const timeblocks = [
 ];
 
 const Home = () => {
-  useEffect(() => {
-    document.title = 'Warteg ITB FRS Scheduler';
-  }, []);
-
-  // [agenda, setAgenda] = useState<IMatakuliah[]>([]);
-  const [matakuliahTerplih, setMatakuliahTerplih] = useState<
-    IMatakuliahTerpilih[]
-  >([]);
-  const { matakuliahData } = useMatakuliah();
-
-  const addMatakuliah = (
-    matakuliah: IMatakuliah,
-    isEnabled: boolean,
-    color: ColorVariants
-  ) => {
-    setMatakuliahTerplih((prev) => [
-      ...prev,
-      { matakuliah: matakuliah, isEnabled: isEnabled, color: color }
-    ]);
-  };
-
-  const addRandomMatakuliah_DEBUG = () => {
-    const randomMatakuliah =
-      matakuliahData[Math.floor(Math.random() * matakuliahData.length)];
-    const randomColor = getRandomColorVariant();
-
-    addMatakuliah(randomMatakuliah, true, randomColor);
-  };
+  const { addRandomMatakuliah } = useDebug();
 
   return (
     <div className="min-h-screen px-8 py-4 bg-gradient-to-r from-amber-50 to-slate-100">
@@ -68,17 +34,10 @@ const Home = () => {
             className="flex-1 grow-[2.5]"
             days={days}
             timeblocks={timeblocks}
-            matakuliahTerpilih={matakuliahTerplih}
           />
-          <ListMatakuliahTerpilih
-            className="flex-1"
-            mataKuliahTerpilih={matakuliahTerplih}
-            setMataKuliahTerpilih={setMatakuliahTerplih}
-          />
+          <PickedMatakuliahList className="flex-1" />
         </div>
-        <button onClick={addRandomMatakuliah_DEBUG}>
-          DEBUG_AddRandomMatakuliah
-        </button>
+        <button onClick={addRandomMatakuliah}>DEBUG_AddRandomMatakuliah</button>
       </main>
     </div>
   );

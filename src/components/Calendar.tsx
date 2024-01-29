@@ -1,34 +1,29 @@
-import { IMatakuliahTerpilih } from '../models/MatakuliahTerpilih';
-import { IJadwal } from '../models/Matakuliah';
+import usePickedMataKuliahContext from '@/hooks/usePickedMataKuliahContext';
+import { PickedMatakuliah } from '@/models/PickedMatakuliah';
 import Agenda from './Agenda';
 
 interface CalendarProps {
   days: string[];
   timeblocks: string[];
-  matakuliahTerpilih: IMatakuliahTerpilih[];
   className: string;
 }
 
-const Calendar = ({
-  days,
-  timeblocks,
-  matakuliahTerpilih,
-  className
-}: CalendarProps) => {
-  const matakuliah: IMatakuliahTerpilih[] = [];
+const Calendar = ({ days, timeblocks, className }: CalendarProps) => {
+  const { pickedMatakuliah } = usePickedMataKuliahContext();
+  const matakuliah: PickedMatakuliah[] = [];
+
+  // console.log(pickedMatakuliah);
 
   // Split all matakuliah by jadwal
-  matakuliahTerpilih.forEach((mkT) => {
-    const jadwal = mkT.matakuliah.jadwal;
+  pickedMatakuliah.forEach((pmk) => {
+    const jadwal = pmk.matakuliah.jadwal;
     jadwal &&
-      jadwal instanceof Array &&
       jadwal.forEach((el) => {
-        console.log(el);
         matakuliah.push({
-          ...mkT,
+          ...pmk,
           matakuliah: {
-            ...mkT.matakuliah,
-            jadwal: el
+            ...pmk.matakuliah,
+            jadwal: [el]
           }
         });
       });
@@ -46,7 +41,7 @@ const Calendar = ({
             matakuliah={matakuliah.filter(
               (mk) =>
                 mk.matakuliah.jadwal &&
-                (mk.matakuliah.jadwal as IJadwal).start.hari === day
+                mk.matakuliah.jadwal[0].start.hari === day
             )}
             timeblockLength={timeblocks.length}
             isLeftmost={index == 0}
@@ -67,7 +62,7 @@ const CalendarColumn = ({
 }: {
   id: string;
   timeblockLength: number;
-  matakuliah?: IMatakuliahTerpilih[];
+  matakuliah?: PickedMatakuliah[];
   isLeftmost?: boolean;
   isRightmost?: boolean;
 }) => {

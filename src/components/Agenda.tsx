@@ -1,13 +1,12 @@
-import { IJadwal } from '../models/Matakuliah';
-import { IMatakuliahTerpilih } from '../models/MatakuliahTerpilih';
+import { PickedMatakuliah } from '@/models/PickedMatakuliah';
 
 interface AgendaProps {
-  matakuliahTerpilih: IMatakuliahTerpilih;
+  matakuliahTerpilih: PickedMatakuliah;
 }
 
 const Agenda = ({ matakuliahTerpilih }: AgendaProps) => {
   const { matakuliah, color } = matakuliahTerpilih;
-  const { start, end } = matakuliah.jadwal as IJadwal;
+  const { start, end } = matakuliah.jadwal![0];
 
   const CALENDAR_START_TIME = 360;
 

@@ -1,7 +1,7 @@
-import { IMatakuliah } from './Matakuliah';
+import { Matakuliah } from './JSONData';
 
-export interface IMatakuliahTerpilih {
-  matakuliah: IMatakuliah;
+export interface PickedMatakuliah {
+  matakuliah: Matakuliah;
   isEnabled: boolean;
   color: ColorVariants;
 }

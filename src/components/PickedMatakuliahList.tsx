@@ -1,25 +1,14 @@
-import { IMatakuliahTerpilih } from '@/models/MatakuliahTerpilih';
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogTitle,
-  DialogTrigger,
-  DialogHeader
-} from './ui/dialog';
+import { Dialog, DialogContent, DialogTrigger } from './ui/dialog';
 import SearchMatakuliah from './SearchMatakuliah';
+import usePickedMataKuliahContext from '@/hooks/usePickedMataKuliahContext';
 
-interface ListMatakuliahTerpilihProps {
+interface PickedMatakuliahListProps {
   className?: string;
-  mataKuliahTerpilih: IMatakuliahTerpilih[];
-  setMataKuliahTerpilih: (mataKuliahTerpilih: IMatakuliahTerpilih[]) => void;
 }
 
-const ListMatakuliahTerpilih = ({
-  className,
-  mataKuliahTerpilih,
-  setMataKuliahTerpilih
-}: ListMatakuliahTerpilihProps) => {
+const PickedMatakuliahList = ({ className }: PickedMatakuliahListProps) => {
+  const { pickedMatakuliah } = usePickedMataKuliahContext();
+
   return (
     <div className={`flex flex-col ${className}`}>
       <Dialog>
@@ -40,20 +29,20 @@ const ListMatakuliahTerpilih = ({
 
         {/* this part */}
         <div className="px-2 py-2 max-h-[500px] overflow-auto flex flex-col gap-2">
-          {mataKuliahTerpilih.length == 0 && (
+          {pickedMatakuliah.length == 0 && (
             <p className="text-sm text-slate-500 px-2">
               Kamu belum mengambil mata kuliah apapun D:
             </p>
           )}
 
-          {mataKuliahTerpilih.map((mk) => (
+          {pickedMatakuliah.map((mk) => (
             <div
               className={`border p-2 flex flex-row gap-2 rounded-lg ${mk.color}`}
             >
               <p className="font-bold text-3xl align-middle">
                 {String(mk.matakuliah.no_kelas).padStart(2, '0')}
               </p>
-              <div>
+              <div className="text-sm">
                 <p>
                   {mk.matakuliah.kode} - {mk.matakuliah.sks}{' '}
                   <span className="text-xs">SKS</span>
@@ -80,4 +69,4 @@ const ListMatakuliahTerpilih = ({
   );
 };
 
-export default ListMatakuliahTerpilih;
+export default PickedMatakuliahList;

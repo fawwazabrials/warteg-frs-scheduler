@@ -8,11 +8,10 @@ import {
   SelectValue
 } from './ui/select';
 import { Input } from './ui/input';
-import listFakultas from '../json/list_fakultas.json';
-import listProdi from '../json/list_prodi.json';
+import useJSONData from '@/hooks/useJSONData';
 
 const SearchMatakuliah = () => {
-  console.log(listFakultas);
+  const { prodiData, fakultasData } = useJSONData();
 
   return (
     <div className="flex flex-row gap-4">
@@ -25,7 +24,7 @@ const SearchMatakuliah = () => {
               <SelectValue placeholder="Fakultas" />
             </SelectTrigger>
             <SelectContent>
-              {listFakultas.map((fakultas) => (
+              {fakultasData.map((fakultas) => (
                 <SelectItem key={fakultas.kode} value={`${fakultas.kode}`}>
                   {fakultas.kode}
                 </SelectItem>
