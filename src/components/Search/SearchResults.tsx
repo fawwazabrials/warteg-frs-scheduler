@@ -4,6 +4,7 @@ import { Button } from '../ui/button';
 import { ColorVariants } from '@/models/PickedMatakuliah';
 import usePickedMataKuliahContext from '@/hooks/usePickedMataKuliahContext';
 import { getRandomColorVariant } from '@/utils/getRandom';
+import { Fade } from 'react-awesome-reveal';
 
 interface SearchResultsProps {
   setIsDialogOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -14,7 +15,7 @@ const SearchResults = ({ setIsDialogOpen }: SearchResultsProps) => {
   const { addPickedMatakuliah } = usePickedMataKuliahContext();
 
   return (
-    <div>
+    <div className="transition">
       <div className="mb-2 flex flex-col sm:flex-row sm:justify-center items-center">
         <p className="text-sm text-muted-foreground text-center italic">
           Menunjukan {count} dari {result.length} hasil yang ditemukan.{' '}
@@ -35,12 +36,14 @@ const SearchResults = ({ setIsDialogOpen }: SearchResultsProps) => {
               setIsDialogOpen(false);
             }}
           >
-            <MatakuliahItem
-              className="hover:scale-[1.05] cursor-pointer transition-transform duration-200"
-              showHour={true}
-              matakuliah={matakuliah}
-              color={ColorVariants.primary}
-            />
+            <Fade cascade damping={0.1} duration={500}>
+              <MatakuliahItem
+                className="hover:scale-[1.05] cursor-pointer transition-transform duration-200"
+                showHour={true}
+                matakuliah={matakuliah}
+                color={ColorVariants.primary}
+              />
+            </Fade>
           </div>
         ))}
       </div>

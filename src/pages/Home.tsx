@@ -33,7 +33,7 @@ const Home = () => {
         <Header />
       </header>
       <main>
-        <div className="flex flex-col xl:flex-row gap-2 h-[700px] flex-1">
+        <div className="flex flex-col xl:flex-row gap-2 flex-1">
           <Card className="flex-auto grow-[1]">
             <CardContent className="p-0">
               <Calendar

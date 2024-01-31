@@ -38,7 +38,11 @@ const PickedMatakuliahList = ({ className }: PickedMatakuliahListProps) => {
               );
             }}
           >
-            <MatakuliahItem matakuliah={mk.matakuliah} color={mk.color} />
+            <MatakuliahItem
+              className="hover:scale-[1.01] cursor-pointer transition-transform duration-200"
+              matakuliah={mk.matakuliah}
+              color={mk.color}
+            />
           </div>
         ))}
       </CardContent>

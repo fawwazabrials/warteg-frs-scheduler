@@ -49,7 +49,7 @@ const PickedMatakuliahProvider: React.FC<{ children: React.ReactNode }> = ({
     setPickedMatakuliah((prev) =>
       prev.filter(
         (m) =>
-          m.matakuliah.kode !== kodeMatakuliah &&
+          m.matakuliah.kode !== kodeMatakuliah ||
           m.matakuliah.no_kelas !== noKelasMatakuliah
       )
     );

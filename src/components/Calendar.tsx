@@ -28,7 +28,7 @@ const Calendar = ({ days, timeblocks, className }: CalendarProps) => {
   });
 
   return (
-    <div className={`bg-background overflow-scroll ${className}`}>
+    <div id="calendar" className={`bg-background overflow-scroll ${className}`}>
       <div className="flex flex-row flex-auto">
         <CalendarColumnLabel fill={timeblocks} />
 
