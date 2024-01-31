@@ -28,22 +28,22 @@ const MatakuliahItem = ({
           </p>
           <p>{matakuliah.nama}</p>
           <div className="text-xs italic">
-            <div className="my-2">
-              <p className="font-semibold">Jadwal:</p>
-              {showHour &&
-                (matakuliah.jadwal ? (
-                  matakuliah.jadwal.map((jadwal) => (
+            {showHour &&
+              (matakuliah.jadwal ? (
+                matakuliah.jadwal.map((jadwal) => (
+                  <div className="my-2">
+                    <p className="font-semibold">Jadwal:</p>
                     <p
                       key={`${matakuliah.kode}${matakuliah.no_kelas}${jadwal.start.hari}${jadwal.start.jam}${jadwal.start.menit}${jadwal.end.jam}${jadwal.end.menit}`}
                     >
                       {jadwal.start.hari}, {jadwal.start.jam}.{jadwal.end.menit}{' '}
                       - {jadwal.end.jam}.{jadwal.end.menit}
                     </p>
-                  ))
-                ) : (
-                  <p>Jadwal tdk tersedia</p>
-                ))}
-            </div>
+                  </div>
+                ))
+              ) : (
+                <p>Jadwal tdk tersedia</p>
+              ))}
             <div>
               <p className="font-semibold">Dosen:</p>
               {matakuliah.dosen ? (
