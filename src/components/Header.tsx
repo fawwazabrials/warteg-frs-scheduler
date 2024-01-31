@@ -1,5 +1,6 @@
 import { HiOutlineInformationCircle } from 'react-icons/hi';
-import { FiGithub } from 'react-icons/fi';
+import { FiDownload, FiGithub } from 'react-icons/fi';
+import { downloadCalendarAsPng } from '@/utils/downloadCalendar';
 
 const Header = () => {
   return (
@@ -13,6 +14,10 @@ const Header = () => {
         </p>
       </div>
       <div className="flex flex-row justify-center items-center gap-4 mt-2 md:mt-0">
+        <FiDownload
+          className="w-5 h-5 cursor-pointer transform hover:-translate-y-1 duration-150 text-primary"
+          onClick={downloadCalendarAsPng}
+        />
         <HiOutlineInformationCircle
           className="w-5 h-5 cursor-pointer transform hover:-translate-y-1 duration-150 text-primary"
           onClick={() => {}} // TODO: Route to About page
