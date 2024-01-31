@@ -9,7 +9,10 @@ type PickedMatakuliahContextType = {
     isEnabled: boolean,
     color: ColorVariants
   ) => void;
-  removePickedMatakuliah: (kodeMatakuliah: string) => void;
+  removePickedMatakuliah: (
+    kodeMatakuliah: string,
+    noKelasMatakuliah: number
+  ) => void;
   updatePickedMatakuliah: (pickedMatakuliah: PickedMatakuliah) => void;
 };
 
@@ -39,9 +42,16 @@ const PickedMatakuliahProvider: React.FC<{ children: React.ReactNode }> = ({
     ]);
   };
 
-  const removePickedMatakuliah = (kodeMatakuliah: string) => {
+  const removePickedMatakuliah = (
+    kodeMatakuliah: string,
+    noKelasMatakuliah: number
+  ) => {
     setPickedMatakuliah((prev) =>
-      prev.filter((m) => m.matakuliah.kode !== kodeMatakuliah)
+      prev.filter(
+        (m) =>
+          m.matakuliah.kode !== kodeMatakuliah &&
+          m.matakuliah.no_kelas !== noKelasMatakuliah
+      )
     );
   };
 

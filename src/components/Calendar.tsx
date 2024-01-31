@@ -12,8 +12,6 @@ const Calendar = ({ days, timeblocks, className }: CalendarProps) => {
   const { pickedMatakuliah } = usePickedMataKuliahContext();
   const matakuliah: PickedMatakuliah[] = [];
 
-  // console.log(pickedMatakuliah);
-
   // Split all matakuliah by jadwal
   pickedMatakuliah.forEach((pmk) => {
     const jadwal = pmk.matakuliah.jadwal;
@@ -30,8 +28,8 @@ const Calendar = ({ days, timeblocks, className }: CalendarProps) => {
   });
 
   return (
-    <div className={`bg-white shadow-lg py-4 overflow-x-scroll ${className}`}>
-      <div className="flex flex-row flex-auto h-[600px]  ">
+    <div className={`bg-background overflow-scroll ${className}`}>
+      <div className="flex flex-row flex-auto">
         <CalendarColumnLabel fill={timeblocks} />
 
         {days.map((day, index) => (
@@ -68,7 +66,7 @@ const CalendarColumn = ({
 }) => {
   return (
     <div id={id} className="relative flex flex-col flex-auto min-h-[1000px]">
-      <div className="h-[40px] flex items-center justify-center border-b">
+      <div className="h-[40px] flex items-center justify-center border-b sticky">
         {/* Label */}
         <h3 className="text-center text-sm font-semibold">{id}</h3>
       </div>
@@ -97,7 +95,7 @@ const CalendarColumnLabel = ({ fill }: { fill?: string[] }) => {
     <div className="flex flex-col grow-[0.2] min-h-[1000px] sticky z-10 left-0">
       <div className="h-[40px] border-b sticky z-10 left-0"></div>
 
-      <div className="bg-white flex-1 flex flex-col">
+      <div className="bg-background flex-1 flex flex-col">
         {fill &&
           Array.from({ length: fill.length }, (_, index) => (
             <div
